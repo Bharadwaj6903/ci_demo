@@ -1,0 +1,65 @@
+(base) PS C:\Users\Bharadwaj\Desktop\542 CampusX\MLOPS\15_ci_demo> git init
+Initialized empty Git repository in C:/Users/Bharadwaj/Desktop/542 CampusX/MLOPS/15_ci_demo/.git/
+(base) PS C:\Users\Bharadwaj\Desktop\542 CampusX\MLOPS\15_ci_demo> git remote add origin https://github.com/Bharadwaj6903/ci_demo.git
+(base) PS C:\Users\Bharadwaj\Desktop\542 CampusX\MLOPS\15_ci_demo> git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .github/
+        app.py
+        notes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) PS C:\Users\Bharadwaj\Desktop\542 CampusX\MLOPS\15_ci_demo> git add .
+(base) PS C:\Users\Bharadwaj\Desktop\542 CampusX\MLOPS\15_ci_demo> git commit -m  "initial"
+[main (root-commit) 6815cc8] initial
+ 3 files changed, 39 insertions(+)
+ create mode 100644 .github/workflows/ci.yaml
+ create mode 100644 app.py
+ create mode 100644 notes.txt
+(base) PS C:\Users\Bharadwaj\Desktop\542 CampusX\MLOPS\15_ci_demo> git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Bharadwaj6903/ci_demo.git'
+(base) PS C:\Users\Bharadwaj\Desktop\542 CampusX\MLOPS\15_ci_demo> git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Bharadwaj6903/ci_demo.git'
+(base) PS C:\Users\Bharadwaj\Desktop\542 CampusX\MLOPS\15_ci_demo> git push origin main  
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 674 bytes | 337.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Bharadwaj6903/ci_demo.git
+ * [new branch]      main -> main
+(base) PS C:\Users\Bharadwaj\Desktop\542 CampusX\MLOPS\15_ci_demo> git add .
+(base) PS C:\Users\Bharadwaj\Desktop\542 CampusX\MLOPS\15_ci_demo> git commit -m  "initial2"
+[main 7af8434] initial2
+ 1 file changed, 7 insertions(+), 9 deletions(-)
+(base) PS C:\Users\Bharadwaj\Desktop\542 CampusX\MLOPS\15_ci_demo> git push origin main  
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 389 bytes | 389.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Bharadwaj6903/ci_demo.git
+   6815cc8..7af8434  main -> main
+(base) PS C:\Users\Bharadwaj\Desktop\542 CampusX\MLOPS\15_ci_demo> git add .
+(base) PS C:\Users\Bharadwaj\Desktop\542 CampusX\MLOPS\15_ci_demo> git commit -m  "initial3"
+[main 32352c3] initial3
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+(base) PS C:\Users\Bharadwaj\Desktop\542 CampusX\MLOPS\15_ci_demo> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Bharadwaj6903/ci_demo.git
+   7af8434..32352c3  main -> main
+(base) PS C:\Users\Bharadwaj\Desktop\542 CampusX\MLOPS\15_ci_demo> 
